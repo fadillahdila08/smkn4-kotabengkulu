@@ -1,0 +1,138 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #f982d9;
+    color: white;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8bfe7;
+}
+
+/* Section */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f982d9;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+/* News */
+.news-item {
+    background: #eee;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #f982d9;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 100px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f982d9;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .logo, nav {
+        float: none;
+        text-align: center;
+    }
+}
